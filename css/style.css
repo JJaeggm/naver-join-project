@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+/* 전체 리셋 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 전체 wrap */
+.wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 500px;
+}
+
+/* h1 로고 영역 */
+h1 {
+  width: 460px;
+  padding: 16px 20px;
+}
+h1 a {
+  display: block;
+  width: 94px;
+  height: 20px;
+  background-image: url(../img/logo_naver.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/* content 영역 */
+.content {
+  width: 460px;
+  height: 1000px;
+  padding: 30px 20px;
+}
+
+/* join form */
+#joinForm {
+  width: 100%;
+  height: 100%;
+}
+
+/* 폰트 설정 영역 */
+/* text */
+.text {
+  /* margin: 0 5px; */
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -0.8px;
+  color: #222;
+  vertical-align: middle;
+}
+
+/* text check all */
+.text_check_all {
+  display: block;
+  margin-left: 3px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+/* terms desc */
+.terms_desc {
+  margin: 9px 0 0 32px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #929294;
+}
+
+/* [선택] 동의 폰트 */
+.check_label .option {
+  color: #929294;
+  margin-left: 3px;
+  /* margin-right: 4px; */
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -0.6px;
+  vertical-align: middle;
+}
+
+/* [필수] 동의 폰트 */
+.check_label .required {
+  color: #09aa5c;
+}
+
+/* 전체동의 */
+input[type='checkbox'] {
+  display: none;
+}
+input[type='checkbox'] + label {
+  display: inline-block;
+  cursor: pointer;
+  line-height: 28px;
+  padding-left: 28px;
+  background: url('../img/Frame\ 3.svg') left/28px no-repeat;
+}
+input[type='checkbox']:checked + label {
+  background-image: url('../img/Frame\ 4.svg');
+}
+
+/* 체크박스 속성 */
+.check_label {
+  padding-bottom: 4px;
+}
+.check_label span {
+  user-select: none;
+  font-size: 15px;
+}
+.check_label_all {
+}
+.check_label_all span {
+  font-size: 17px;
+}
+
+/* 이용약관 영역 */
+.terms_item {
+  margin-top: 30px;
+}
+.terms_box {
+  overflow: auto;
+  max-height: 100px;
+  padding: 15px;
+  margin-left: 30px;
+  border: 1px solid #d6d6d6;
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: #303038;
+}
+.article_title {
+  letter-spacing: -0.38px;
+}
+.article_text {
+  margin-top: 5px;
+}
+.article h3 {
+  font-size: 14px;
+}
+.article p {
+  font-size: 13px;
+  color: #767678;
+}
+
+/* 다음 버튼 */
+.btn_next_wrap {
+  position: fixed;
+  width: 460px;
+  bottom: 0;
+  padding: 20px;
+  background-color: #fff;
+}
+.btn_next {
+  width: 100%;
+  border-radius: 6px;
+  padding: 14px 0;
+  background-color: #8990a0;
+}
+.btn_next p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .wrap {
+    width: 100%;
+    max-width: 767px;
+    display: flex;
+  }
+  .content_wrap {
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 767px;
+  }
+  h1 {
+    width: 100%;
+  }
+  .content {
+    width: 100%;
+    display: flex;
+    padding: 0 0px;
+  }
+  #joinForm {
+    /* width: 100%; */
+    flex: 1 1 auto;
+    padding: 0 30px;
+  }
+  .btn_next_wrap {
+    width: 100%;
+    padding: 0 0px;
+  }
+  .btn_next_frame {
+    padding: 0 30px;
+  }
+  .btn_next {
+  }
+}
