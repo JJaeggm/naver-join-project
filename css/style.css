@@ -114,9 +114,9 @@ input[type='checkbox']:checked + label {
 /* 체크박스 속성 */
 .check_label {
   padding-bottom: 4px;
+  user-select: none;
 }
 .check_label span {
-  user-select: none;
   font-size: 15px;
 }
 .check_label_all {
@@ -196,7 +196,7 @@ input[type='checkbox']:checked + label {
   #joinForm {
     /* width: 100%; */
     flex: 1 1 auto;
-    padding: 0 30px;
+    padding: 30px 30px;
   }
   .btn_next_wrap {
     width: 100%;
